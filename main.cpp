@@ -1,7 +1,10 @@
 #include "6502emu.h"
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
+    (void)argv[0];
+    (void)argc;
+
     Memory memory;
     memory.initialise();
     CPU cpu;
